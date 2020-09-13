@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+    <br>
+    <h3>For Vacancies:</h3>
+    <br>
+            <form action="/vacancy/new" method='post'>{% csrf_token %}
+              {{custom_form}}<br>
+                <button type="submit">Submit</button>
+            </form>
+    <h3>For Resumes:</h3>
+    <br>
+            <form action="/resume/new" method="post">{% csrf_token %}
+              {{custom_form}}<br>
+                <button type="submit">Submit</button>
+            </form>
+</body>
+</html>
